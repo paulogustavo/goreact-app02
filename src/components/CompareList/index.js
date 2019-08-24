@@ -9,7 +9,7 @@ const CompareList = ({ repositories }) => (
       // eslint-disable-next-line react/prop-types
       repositories.map((repository) => (
       // eslint-disable-next-line react/jsx-indent
-      <Repository>
+      <Repository key={repository.id}>
         <header>
           <img src={repository.owner.avatar_url} alt={repository.owner.login} />
           <strong>{repository.name}</strong>
