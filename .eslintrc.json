@@ -4,7 +4,7 @@
     "browser": true,
     "jest": true
   },
-  "plugins": ["react", "jsx", "import"],
+  "plugins": ["react", "jsx-a11y", "import"],
   "extends": "airbnb",
   "rules": {
     "react/jsx-filename-extension": [
@@ -14,6 +14,7 @@
       }
     ],
     "global-require": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "linebreak-style": 0
   }
 }
